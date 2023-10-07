@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crad</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/my stayle/stayle.css">
+</head>
+<body>
+    <div class="container p-5 text-center ">
+        <div class="row w-75 gy-2 m-auto">
+            <h1 class=" pb-5 fw-bolder">my CRUD</h1>
+            <p class="text-start">PRODCUT NAME</p>
+
+<div class="input-group">
+    <input type="text" class="form-control nameOF" placeholder="midName" aria-label="midName" aria-describedby="basic-addon1">
+</div>    
+<p class="text-start">PRODCUT SERIAL</p>
+
+<div class="input-group">
+    <input type="number" class="form-control codNumber" placeholder="sirNumber" aria-label="sirNumber" aria-describedby="basic-addon1">
+</div>    
+<p class="text-start">PRODCUT Stock</p>
+
+<div class="input-group">
+    <input type="text" class="form-control stock" placeholder="quantity" aria-label="quantity" aria-describedby="basic-addon1">
+</div>    
+<p class="text-start">PRODCUT available</p>
+
+<div class="input-group">
+    <input type="text" class="form-control maxAvailble" placeholder="available" aria-label="available" aria-describedby="basic-addon1">
+</div>   
+<div class="button pt-5 bo">
+    <button type="submit" class="btn btn-outline-primary  " id="submition">submit</button>
+
+</div> 
+<div class="input-group">
+    <input oninput="searching(this.value)" type="text" class="form-control search py-2 my-3" placeholder="search in product" aria-label="search " aria-describedby="basic-addon1">
+</div>   
+
+</div>
+</div>
+
+<div class="container ">
+    <div class="row w-75  m-auto">
+        <table class="table  table-hover text-white">
+            <thead>
+                <th>sequence</th>
+                <th>NAME</th>
+                <th>Serial</th>
+                <th>stock</th>
+                <th>available</th>
+                <th>DELETE</th>
+                 <th>UPDATE</th>
+            </thead>
+            <tbody id="table">
+              
+            </tbody>
+          </table>
+    
+    </div>
+</div>
+
+
+
+
+
+
+
+<script src="js/js2/index.js"></script>
+</body>
+</html>
